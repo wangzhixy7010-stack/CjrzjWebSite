@@ -38,12 +38,14 @@ next-env.d.ts
 # Vercel
 .vercel
 
-# Local settings (not project config)
+# Local agent overrides
 .claude/settings.local.json
 
-# User-specific skills (not part of the template)
-.claude/skills/customize/
-.claude/skills/release/
-
-# Local temp files
+# Local temp
 temp/
+
+# Large media (GitHub 100MB limit) — keep local, do not push
+public/sites/**/uploadfile/**/*.mp4
+public/sites/**/uploadfile/video/
+public/sites/**/uploadfile/stodownload.mp4
+public/sites/**/uploadfile/ueditor/video/
